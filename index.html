@@ -33,6 +33,20 @@
         .active {
             display: block;
         }
+        
+         /* Style the left section */
+        .left-section {
+            width: 50%; /* Take up 50% of the available width */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Style the right section */
+        .right-section {
+            width: 50%; /* Take up 50% of the available width */
+            background-color: #ddd;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -49,17 +63,16 @@
     </nav>
 
     <div class="content" id="about">
-    	    <section id="about">
+    	     <div class="left-section">
+        <h2>Left Section</h2>
+        <p>This is the content of the left section.</p>
+    </div>
 
-        <h2>About Me</h2>
-        <p>Welcome to my personal website! 
-        	I want to say that I love you Rozina Jooooooooooooon</p>
-        	</section>
-        	
-        	<section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Add your portfolio projects here -->
-    </section>
+    <!-- Right Section -->
+    <div class="right-section">
+        <h2>Right Section</h2>
+        <p>This is the content of the right section.</p>
+    </div>
         	
     </div>
 
