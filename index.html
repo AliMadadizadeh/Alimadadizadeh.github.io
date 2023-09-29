@@ -3,38 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Madadizadeh</title>
+    <title>Two Vertical Sections</title>
     <style>
-        /* Add your CSS styles here */
+        /* Apply CSS styles for layout */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-        }
-        .tabs {
             display: flex;
-            background-color: #007bff;
-            color: #fff;
         }
-        .tab {
-            flex: 1;
-            text-align: center;
-            padding: 1rem;
-            cursor: pointer;
-        }
-        .tab:hover {
-            background-color: #0056b3;
-        }
-        .content {
-            display: none;
-            padding: 2rem;
-        }
-        .active {
-            display: block;
-        }
-        
-         /* Style the left section */
+
+        /* Style the left section */
         .left-section {
             width: 50%; /* Take up 50% of the available width */
             background-color: #f0f0f0;
@@ -50,20 +28,8 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ali Madadizadeh</h1>
-        <p>PhD Student at the University of Guelph</p>
-        <img src="myPhoto.jpg" alt="My Photo"  width="200" height="300">
-    </header>
-
-    <nav class="tabs">
-        <div class="tab" onclick="showTab('about')">About</div>
-        <div class="tab" onclick="showTab('Publications')">Publications</div>
-        <div class="tab" onclick="showTab('contact')">Contact</div>
-    </nav>
-
-    <div class="content" id="about">
-    	     <div class="left-section">
+    <!-- Left Section -->
+    <div class="left-section">
         <h2>Left Section</h2>
         <p>This is the content of the left section.</p>
     </div>
@@ -73,33 +39,5 @@
         <h2>Right Section</h2>
         <p>This is the content of the right section.</p>
     </div>
-        	
-    </div>
-
-    <div class="content" id="Publications">
-        <h2>Publications</h2>
-        <!-- Add your Publications projects here -->
-    </div>
-
-    <div class="content" id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at: your.email@example.com</p>
-    </div>
-
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-
-    <script>
-        function showTab(tabId) {
-            const tabs = document.querySelectorAll('.content');
-            tabs.forEach(tab => {
-                tab.style.display = 'none';
-            });
-            document.getElementById(tabId).style.display = 'block';
-        }
-        // Show the default tab (e.g., 'about') when the page loads
-        showTab('about');
-    </script>
 </body>
 </html>
